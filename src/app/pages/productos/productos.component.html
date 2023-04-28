@@ -1,0 +1,37 @@
+
+<div class="accordion accordion-flush justify-content-around container-fluid p-4" id="accordionFlushExample">
+    <div class="accordion-item">
+      <div *ngFor="let pro of productos">
+        <h2 class="accordion-header text-center">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" attr.data-bs-target="#a{{pro.id}}">
+            <div class="centrar">
+            <h1>{{pro.nombre}}</h1> 
+            </div>
+          </button>
+        </h2>
+        
+        <div id="a{{pro.id}}" class="accordion-collapse collapse">
+          <br>
+          <div class="accordion-body">
+ 
+            <div style="display: flex; justify-content: center; align-items: center;">
+              <img src="{{pro.imagen}}" alt="Descripción de la imagen" style="width: 70%; height: auto;">
+            </div>
+            <br>
+            <div class="card">
+              
+              <div class="card-body">
+                
+            <h4 class="card-subtitle mb-2 text-muted">Precio : </h4>
+              <h4>{{pro.precio}}</h4>
+              <h4 class="card-subtitle mb-2 text-muted">Descripción: </h4>
+              <h4>{{pro.descripcion}}</h4>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>

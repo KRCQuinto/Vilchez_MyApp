@@ -1,0 +1,36 @@
+<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://muebleriadelosaltos.com/wp-content/uploads/2020/10/RECAMARA-AVANTI.jpg" class="d-block w-100" alt="..." width="70%" height="1000px">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.el19digital.com/app/webroot/tinymce/source/2022/Octubre/06Oct/MUEBLES/MUEBLES%20(12).jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="https://www.el19digital.com/app/webroot/tinymce/source/2022/Octubre/06Oct/MUEBLES/MUEBLES%20(3).jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+<br>
+  <h1 class="titumis">Mision</h1>
+  <p class="parrafo">Eesta es la Mision</p>
+
+  <br>
+  <h2>PERSONAL</h2>
+  <div *ngFor="let personas of personal" class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="{{personas.imagen}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{personas.nombre}}</h5>
+      <p class="card-text">{{personas.descripcion}}</p>
+    </div>
+  </div>
+</div>
